@@ -1,0 +1,5 @@
+{
+    "default": {
+        "skrgamenetworkingsockets" : { "baseline": "1.4.0", "port-version": 1 }
+    }
+}

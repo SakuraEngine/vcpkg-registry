@@ -1,0 +1,29 @@
+{
+    "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg/master/scripts/vcpkg.schema.json",
+    "name": "skrgamenetworkingsockets",
+    "version-string": "1.4.0",
+    "port-version": 1,
+    "description": "A basic transport layer for games.",
+    "homepage": "https://github.com/ValveSoftware/GameNetworkingSockets",
+    "dependencies": [
+        "protobuf",
+        "openssl"
+    ],
+    "default-features": [
+        "openssl"
+    ],
+    "features": {
+        "openssl": {
+            "description": "Use OpenSSL as the crypto provider.  This is the default.",
+            "dependencies": [
+                "openssl"
+            ]
+        },
+        "webrtc": {
+            "description": "Compiles WebRTC support for P2P.",
+            "dependencies": [
+                "abseil"
+            ]
+        }
+    }
+}
